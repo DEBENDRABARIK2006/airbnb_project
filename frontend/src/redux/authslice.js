@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 axios.defaults.withCredentials = true;
-const API_URL = "http://localhost:3004";
+const API_URL ="https://airbnb-project-2bb9.vercel.app" || "http://localhost:3004";
 
 // Fetch current logged-in user
 export const fetchCurrentUser = createAsyncThunk(
